@@ -16,7 +16,6 @@ public class e3_menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        //Full screen is set for the Window
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
@@ -29,7 +28,7 @@ public class e3_menu extends AppCompatActivity {
                     @Override
                     public void onInitializationSuccess(YouTubePlayer.Provider provider,
                                                         YouTubePlayer youTubePlayer, boolean b) {
-                        // do any work here to cue video, play video, etc.
+
                         youTubePlayer.cueVideo("hP8nLb0VJU0");
                     }
                     @Override

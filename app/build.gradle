@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     repositories {
         flatDir {
-            dirs 'libs' //this way we can find the .aar file in libs folder
+            dirs 'libs'
         }
     }
     compileSdkVersion 26
