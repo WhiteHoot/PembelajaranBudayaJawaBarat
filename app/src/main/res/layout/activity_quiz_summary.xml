@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="#0984e3"
+    android:gravity="center"
+    tools:context="com.pbjb.gr.pembelajaranbudayajawabarat.quiz_summary">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Gold"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/im_res"
+        android:src="@drawable/gold_medal"
+        android:layout_below="@id/texttitle"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/text_view_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/im_res"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:text="Score: 0"
+        android:textSize="25sp"
+        android:layout_margin="15dp"
+        />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/text_view_score"
+        android:background="#ffffff"
+        android:layout_margin="8dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1"
+        >
+
+        <TextView
+            android:id="@+id/text_view_ca"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Jawaban benar"
+            android:textAlignment="textStart"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/text_view_ca_res"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text=":"
+            android:textAlignment="textStart"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/text_view_wa"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_ca"
+            android:text="Jawaban salah"
+            android:textAlignment="textStart"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/text_view_wa_res"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/text_view_ca"
+            android:text=":"
+            android:textAlignment="textStart"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/text_view_highscore"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_wa"
+            android:text="Highscore"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/text_view_highscore_res"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/text_view_wa"
+            android:text=":"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_margin="10dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/rl1"
+        android:background="#ffffff"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/btn_again"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rdedge_btn"
+        android:text="Coba Lagi"
+        android:textColor="@color/white"
+        android:onClick="tryAgain"/>
+
+    <Button
+        android:id="@+id/btn_quit"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/rdedge_btn"
+        android:text="Keluar"
+        android:textColor="@color/white"
+        android:onClick="quitQuiz"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5b5b5b</color>
+    <color name="colorPrimaryDark">#2e2e2e</color>
+    <color name="colorAccent">#434343</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#2e2e2e</color>
+    <color name="colorEnc">#6cb52d</color>
+
+    <color name="colorM1">#786cb52d</color>
+    <color name="colorM2">#786f519d</color>
+    <color name="colorM3">#ff7415</color>
+    <color name="colorM4">#963f51b5</color>
+
+
+    <color name="purple_500">#9c27b0</color>
+    <color name="m1">#6c5ce7</color>
+    <color name="m2">#0984e3</color>
+    <color name="m3">#00cec9</color>
+    <color name="m4">#00b894</color>
+    <color name="m5">#ff7675</color>
+    <color name="m6">#fd79a8</color>
+    <color name="deep_purple">#673ab7</color>
+    <color name="indigo">#443bff</color>
+    <color name="indigo2">#3932d8</color>
+    <color name="indigo3">#2f2999</color>
+    <color name="blue_500">#2196f3</color>
+    <color name="cyan_500">#00bcd4</color>
+    <color name="light_blue_500">#03a9f4</color>
+    <color name="darkblue">#23283a</color>
+    <color name="testcolorblue">#152b38</color>
+    <color name="pink">#fe104d</color>
+    <color name="yellow">#ffb300</color>
+    <color name="lightgray">#cdcdcd</color>
+    <color name="lightgray2">#8e8e8e</color>
+    <color name="lightgray_tr">#008e8e8e</color>
+    <color name="purple_quiz">#6c00ff</color>
+    <color name="purple_quiz2">#5200c2</color>
+    <color name="purple_quiz3">#8135007e</color>
+    <color name="white_tr">#cdffffff</color>
+
+</resources>

@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/m4"
+    tools:context="com.pbjb.gr.pembelajaranbudayajawabarat.e4_menu">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingtoolbar"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="#00ffffff"
+            app:title="Kesenian"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:background="@drawable/m4_image">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_id"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="#00a484"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ar_icon"
+                        android:layout_gravity="center"/>
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:padding="12dp"
+                        android:textSize="17sp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="12dp"
+                        android:text="Materi ini dilengkapi dengan fitur Augmented Reality.\n"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="#00a484"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:padding="12dp"
+                        android:textSize="20sp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="1.Sisingaan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <ImageView
+                        android:src="@drawable/m4_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:padding="12dp"
+                        android:textSize="17sp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/m4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cd_m4vid1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="230dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="#6c5ce7">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/m4_vid1" />
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="#00a484"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:padding="12dp"
+                        android:textSize="20sp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="2.Wayang Golek"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <ImageView
+                        android:src="@drawable/m4_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:padding="12dp"
+                        android:textSize="17sp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/m4_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cd_m4vid2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="230dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="#6c5ce7">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/m4_vid2" />
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="#00a484"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:padding="12dp"
+                        android:textSize="20sp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="3.Kuda Renggong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <ImageView
+                        android:src="@drawable/m4_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:padding="12dp"
+                        android:textSize="17sp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/m4_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cd_m4vid3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="230dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="#6c5ce7">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/m4_vid3" />
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="#00a484"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:padding="12dp"
+                        android:textSize="20sp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="4.Rampak Gendang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <ImageView
+                        android:src="@drawable/m4_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:padding="12dp"
+                        android:textSize="17sp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/m4_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cd_m4vid4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="230dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="#6c5ce7">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/m4_vid4" />
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="#00a484"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:padding="12dp"
+                        android:textSize="20sp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="5.Calung"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <ImageView
+                        android:src="@drawable/m4_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:padding="12dp"
+                        android:textSize="17sp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/m4_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="#00a484"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:padding="12dp"
+                        android:textSize="20sp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="6.Angklung"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <ImageView
+                        android:src="@drawable/m4_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:padding="12dp"
+                        android:textSize="17sp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/m4_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="#00a484"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:padding="12dp"
+                        android:textSize="20sp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="7.Suling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <ImageView
+                        android:src="@drawable/m4_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:padding="12dp"
+                        android:textSize="17sp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/m4_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="#00a484"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:padding="12dp"
+                        android:textSize="20sp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="8.Kecapi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <ImageView
+                        android:src="@drawable/m4_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:padding="12dp"
+                        android:textSize="17sp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/m4_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cd_m4vid5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="230dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="#6c5ce7">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/m4_vid5" />
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="#00a484"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:padding="12dp"
+                        android:textSize="20sp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="9.Jengglong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <ImageView
+                        android:src="@drawable/m4_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:padding="12dp"
+                        android:textSize="17sp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/m4_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cd_m4vid6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="230dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="#6c5ce7">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/m4_vid6" />
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="5dp"
+            app:cardBackgroundColor="#00a484"
+            app:cardUseCompatPadding="true"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ar_icon"
+                    android:layout_gravity="center"/>
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:padding="12dp"
+                    android:textSize="17sp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="12dp"
+                    android:text="Ingin lihat Augmented Reality nya ? Tekan tombol dibawah\n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <Button
+                    android:id="@+id/btn_ar1"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rdedge_btn_2"
+                    android:text="Mulai"
+                    android:textColor="#00a484"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

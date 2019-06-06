@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/m2"
+    tools:context="com.pbjb.gr.pembelajaranbudayajawabarat.e2_menu">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingtoolbar2"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="#00ffffff"
+            app:title="Tarian Adat Jawa Barat"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:background="@drawable/m2_image">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_id"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#086fbe"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:padding="12dp"
+                        android:textSize="20sp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="Tarian Adat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:padding="12dp"
+                        android:textSize="20sp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="1. Tarian Ketuk Tilu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:src="@drawable/m2_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:padding="12dp"
+                        android:textSize="17sp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/m2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cd_m2vid1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="230dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="#6c5ce7">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/m2_vid1" />
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#086fbe"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:padding="12dp"
+                        android:textSize="20sp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="2. Tari Jaipong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:src="@drawable/m2_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:padding="12dp"
+                        android:textSize="17sp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/m2_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cd_m2vid2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="230dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="#6c5ce7">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/m2_vid2" />
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#086fbe"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:padding="12dp"
+                        android:textSize="20sp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="3. Tari Topeng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:src="@drawable/m2_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:padding="12dp"
+                        android:textSize="17sp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/m2_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cd_m2vid3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="230dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="#6c5ce7">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/m2_vid3" />
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#086fbe"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:padding="12dp"
+                        android:textSize="20sp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="4. Tari Merak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:src="@drawable/m2_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:padding="12dp"
+                        android:textSize="17sp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/m2_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cd_m2vid4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="230dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="#6c5ce7">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/m2_vid4" />
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#086fbe"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:padding="12dp"
+                        android:textSize="20sp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="5. Tari Wayang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:src="@drawable/m2_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:padding="12dp"
+                        android:textSize="17sp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/m2_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cd_m2vid5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="230dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="#6c5ce7">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/m2_vid5" />
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#086fbe"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:padding="12dp"
+                        android:textSize="20sp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="6. Tari Kerseus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:src="@drawable/m2_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:padding="12dp"
+                        android:textSize="17sp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/m2_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cd_m2vid6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="230dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="#6c5ce7">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/m2_vid6" />
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#086fbe"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:padding="12dp"
+                        android:textSize="20sp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="7. Tari Buyung"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:src="@drawable/m2_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:padding="12dp"
+                        android:textSize="17sp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/m2_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cd_m2vid7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="230dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="#6c5ce7">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/m2_vid7" />
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#086fbe"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:padding="12dp"
+                        android:textSize="20sp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="8. Tari Ronggeng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:src="@drawable/m2_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:padding="12dp"
+                        android:textSize="17sp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/m2_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cd_m2vid8"
+                        android:layout_width="fill_parent"
+                        android:layout_height="230dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="#6c5ce7">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/m2_vid8" />
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#086fbe"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:padding="12dp"
+                        android:textSize="20sp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="9. Tari Sampiung"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:src="@drawable/m2_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:padding="12dp"
+                        android:textSize="17sp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/m2_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
