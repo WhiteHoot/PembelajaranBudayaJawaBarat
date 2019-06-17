@@ -6,38 +6,43 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import java.util.ArrayList;
 
-public class main_menu extends AppCompatActivity implements View.OnClickListener {
-    private CardView encMenu, quizMenu, aboutMenu;
+
+public class main_menu extends AppCompatActivity{
+
+    RecyclerView recyclerView;
+    ArrayList<MenuList> menuLists;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_main_menu);
-        // Defining
-        encMenu = (CardView) findViewById(R.id.enc_Menu);
-        quizMenu = (CardView) findViewById(R.id.quiz_Menu);
-        aboutMenu = (CardView) findViewById(R.id.abo_Menu);
-        //Assigning
-        encMenu.setOnClickListener(this);
-        quizMenu.setOnClickListener(this);
-        aboutMenu.setOnClickListener(this);
-}
 
-@Override
-    public void onClick(View v){
-        Intent i;
+        recyclerView = findViewById(R.id.rv);
 
-        switch (v.getId()) {
-            case R.id.enc_Menu : i = new Intent (this,slider.class);startActivity(i); break ;
-            case R.id.quiz_Menu : i = new Intent (this,starting_quiz.class);startActivity(i); break ;
-            case R.id.abo_Menu : i = new Intent (this,about_menu.class);startActivity(i); break ;
-            default:break;
-        }
+        menuLists = new ArrayList<>();
+
+        menuLists.add(new MenuList(R.drawable.cd_m1, R.drawable.enc_icon2, getApplication().getResources().getColor(R.color.cd_m1), "Ensiklopedia", "Pelajari Budayanya Disini!"));
+        menuLists.add(new MenuList(R.drawable.cd_m2, R.drawable.quiz_icon1, getApplication().getResources().getColor(R.color.cd_m2), "Quiz", "Tes Kemampuanmu!"));
+        menuLists.add(new MenuList(R.drawable.cd_m3, R.drawable.about_icon2, getApplication().getResources().getColor(R.color.cd_m3), "Tentang", "Tentang Aplikasi"));
+
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        RecyclerView.LayoutManager rvLayoutManager = layoutManager;
+        recyclerView.setLayoutManager(rvLayoutManager);
+
+        rvAdapter adapter = new rvAdapter(this,menuLists);
+
+        recyclerView.setAdapter(adapter);
+
 }
     @Override
     public void onBackPressed() {

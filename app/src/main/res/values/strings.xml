@@ -72,4 +72,10 @@ Secara filosofis 8 orang pengusung ini melambangkan rakyat pribumi yang terjajah
     <string name="m6_8">Surabi atau serabi adalah panganan yang telah tersebar rata hampir di seluruh Jawa Barat, bisa dikatakan bahwa makanan ini adalah khas Sunda. Pembuatannya dibuat menggunakan tepung beras dengan cara masak yang masih tradisional, karena harus menggunakan tungku, bahkan tungku tersebut dibuat dari tanah liat.\n</string>
     <string name="m6_9">Peuyeum merupakan sejenis tape yang juga dibuat dengan cara fermentasi, namun pembutannya dilakukan dengan bahan dasar singkong. Jenis ubi tersebut setelah dikukus sudah langsung siap untuk diberi taburan ragi yang memicu pertumbuhan jamur pada singkong.\n</string>
     <string name="m6_10">Olahan tahu yang sangat familiar di telinga masyarakat Tanah Air adalah tahu sumedang yang berasal dari daerah Sumedang, Jawa Barat. Seperti kebanyakan tahu yang ada, bahan utama tahu ini juga adalah kacang kedelai dengan kandungan protein nabati yang tinggi.\n</string>
+    <string name="ensiklopedia">Ensiklopedia</string>
+    <string name="enc_dsc">Pelajari Budayanya Disini</string>
+    <string name="quiz">Quiz</string>
+    <string name="quiz_dsc">Tes Pengetahuanmu</string>
+    <string name="tentang">Tentang</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
 </resources>
