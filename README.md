@@ -1,4 +1,4 @@
-# PembelajaranBudayaJawaBarat
+# Pembelajaran Budaya Jawa Barat
 
 Pembelajaran Budaya Jawa Barat is an E-Learning app that provides information about the culture of West Java, Indonesia, with Markerless Augemented Reality Feature.
 
