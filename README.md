@@ -18,3 +18,8 @@ Pembelajaran Budaya Jawa Barat is an E-Learning app that provides information ab
 ## Download App
 
 Download the released app here : [PBJB](https://drive.google.com/open?id=1-5DF3KVSOdsldQEeQwUXSHC4uXsF1VCA)
+
+
+## Author
+
+* Arby Laitnis Mahardika
